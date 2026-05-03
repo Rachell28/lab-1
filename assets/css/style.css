@@ -1,0 +1,159 @@
+/* CSS for Personal Profile - Daniela Hernández */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #f4f7f6;
+    --text-color: #333;
+    --card-background: #fff;
+    --border-radius: 8px;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+/* Profile Image */
+img[alt="Foto de perfil"] {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+    box-shadow: var(--shadow);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+/* Header */
+#titulo {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* Sections */
+.seccion {
+    background: var(--card-background);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+.seccion h2, .seccion h3 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--background-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+/* Lists */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+li {
+    margin-bottom: 8px;
+}
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* Form */
+fieldset {
+    border: 2px solid var(--secondary-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+legend {
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 10px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
+    height: 100px;
+}
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #2980b9;
+}
+/* Video */
+video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    #titulo {
+        font-size: 1.8em;
+    }
+    
+    table, th, td {
+        font-size: 14px;
+    }
+}
